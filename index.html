@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JellyBuzz</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="shortcut icon" type="image/webp" href="favicon.webp"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="on_load()">
+	<div id="begin">
+		<h2>Begin as:</h2>
+		<p>💢 Vibration Time:</p>
+		<p class="vibrate_on">
+			<label class="min">Min: <input onchange="save_settings()" type="number" placeholder="0" min="0" value="0"></label>
+			<label class="max">Max: <input onchange="save_settings()" type="number" placeholder="1" min="0" value="1"></label>
+		</p>
+		<p>💤 Off Time:</p>
+		<p class="vibrate_off">
+			<label class="min">Min: <input onchange="save_settings()" type="number" placeholder="0" min="0" value="0"></label>
+			<label class="max">Max: <input onchange="save_settings()" type="number" placeholder="1000" min="0" value="1000"></label>
+		</p>
+		<span class="info">Values in miliseconds (1000 = 1 second)</span>
+	</div>
+	<div id="end">
+		<h2>End as:</h2>
+		<p>💢 Vibration Time:</p>
+		<p class="vibrate_on">
+			<label class="min">Min: <input onchange="save_settings()" type="number" placeholder="100" min="0" value="100"></label>
+			<label class="max">Max: <input onchange="save_settings()" type="number" placeholder="1000" min="0" value="1000"></label>
+		</p>
+		<p>💤 Off Time:</p>
+		<p class="vibrate_off">
+			<label class="min">Min: <input onchange="save_settings()" type="number" placeholder="100" min="0" value="100"></label>
+			<label class="max">Max: <input onchange="save_settings()" type="number" placeholder="500" min="0" value="500"></label>
+		</p>
+		<span class="info">Values in miliseconds (1000 = 1 second)</span>
+	</div>
+	<div id="session">
+		<h2>Session time:</h2>
+		<p>⏱️ From Start to Finish in:</p>
+		<p>
+			<label><input onchange="save_settings()" id="minutes" type="number" placeholder="0" min="0" value="0"> minutes</label>
+			<label><input onchange="save_settings()" id="seconds" type="number" placeholder="30" min="0" value="30"> seconds</label>
+		</p>
+	</div>
+	<div id="loop">
+		<h2>At the session end:</h2>
+
+		<label for="loop_restart">
+			🔁 Restart from Beginning<br>
+			<input onchange="save_settings()" type="radio" id="loop_restart" name="loop_type" value="restart" checked>
+			<ul><li></li><li></li><li></li></ul>
+			<ul><li></li><li></li><li></li></ul>
+			<ul><li></li><li></li><li></li></ul>
+		</label>
+		<label for="loop_continue">
+			▶️ Continue Uninterrupted<br>
+			<input onchange="save_settings()" type="radio" id="loop_continue" name="loop_type" value="continue">
+			<ul><li></li><li></li><li></li></ul>
+			<ul><li></li><li></li><li></li></ul>
+			<ul><li></li><li></li><li></li></ul>
+		</label>
+		<label for="loop_reverse">
+			◀️ Play in reverse to Start<br>
+			<input onchange="save_settings()" type="radio" id="loop_reverse" name="loop_type" value="reverse">
+			<ul><li></li><li></li><li></li></ul>
+			<ul><li></li><li></li><li></li></ul>
+			<ul><li></li><li></li><li></li></ul>
+		</label>
+	</div>
+
+	<div>
+		<button id="start" onclick="start()"><span id="restart">Re</span>Start</button>
+		<button id="stop" onclick="stop()">Stop</button>
+	</div>
+	<script src="javascript.js"></script>
+</body>
+</html>
