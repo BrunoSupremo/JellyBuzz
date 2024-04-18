@@ -106,7 +106,7 @@ function save_settings(){
 }
 
 function on_load(){
-	if(localStorage.length == 0){
+	if(localStorage.loop_type == undefined){
 		return false
 	}
 

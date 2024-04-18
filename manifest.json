@@ -1,0 +1,35 @@
+{
+	"background_color": "#333333",
+	"dir": "ltr",
+	"display": "standalone",
+	"name": "JellyBuzz",
+	"orientation": "any",
+	"scope": "/",
+	"short_name": "JellyBuzz",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "favicon.webp",
+			"sizes": "512x512",
+			"type": "image/webp"
+		}
+	],
+	"description": "Feel the Buzz! With customizable vibrations",
+	"lang": "en",
+	"categories": [
+		"entertainment",
+		"fitness",
+		"health",
+		"lifestyle",
+		"utilities"
+	],
+	"screenshots" : [
+		{
+			"src": "screenshot.png",
+			"sizes": "1680x1756",
+			"type": "image/png",
+			"form_factor": "wide",
+			"label": "Contents of JellyBuzz"
+		}
+	]
+}
