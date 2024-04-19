@@ -9,9 +9,9 @@
 	"start_url": "/",
 	"icons": [
 		{
-			"src": "favicon.webp",
+			"src": "favicon.png",
 			"sizes": "512x512",
-			"type": "image/webp"
+			"type": "image/png"
 		}
 	],
 	"description": "Feel the Buzz! With customizable vibrations",
