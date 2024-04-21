@@ -1,4 +1,5 @@
 {
+	"theme_color": "#333333",
 	"background_color": "#333333",
 	"dir": "ltr",
 	"display": "standalone",
@@ -6,7 +7,7 @@
 	"orientation": "any",
 	"scope": "/",
 	"short_name": "JellyBuzz",
-	"start_url": "/",
+	"start_url": "/JellyBuzz/",
 	"icons": [
 		{
 			"src": "favicon.png",
@@ -29,7 +30,21 @@
 			"sizes": "1680x1756",
 			"type": "image/png",
 			"form_factor": "wide",
-			"label": "Contents of JellyBuzz"
+			"label": "Contents of JellyBuzz in Wide View"
+		},
+		{
+			"src": "screenshot2.png",
+			"sizes": "640x1470",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Contents of JellyBuzz in Narrow View"
+		},
+		{
+			"src": "screenshot3.png",
+			"sizes": "640x1470",
+			"type": "image/png",
+			"form_factor": "narrow",
+			"label": "Contents of JellyBuzz in Narrow View"
 		}
 	]
 }
