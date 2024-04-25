@@ -22,6 +22,7 @@ function start(){
 	timeline_position = 0
 	vibrate_on(0)
 	restart_button.style.display="initial"
+	navigator.wakeLock.request("screen")
 }
 
 function vibrate_on(timer){
